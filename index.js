@@ -19,44 +19,44 @@ app.get('/ex1', (req, res) => {
 
 app.get('/ex2', (req, res) => {
 
-    let res1 = aritmeticos()
-  res.send(res1)
+    let res2 = aritmeticos()
+  res.send(res2)
 })
 
 app.get('/ex3', (req, res) => {
 
-    let res1 = ifElse()
-  res.send(res1)
+    let res3 = ifElse()
+  res.send(res3)
 })
 
 app.get('/ex4', (req, res) => {
 
-    let res1 = variaveis()
-  res.send(res1)
+    let res4 = logicos()
+  res.send(res4)
 })
 
 app.get('/ex5', (req, res) => {
 
-    let res1 = variaveis()
-  res.send(res1)
+    let res5 = relacionais()
+  res.send(res5)
 })
 
 app.get('/ex6', (req, res) => {
 
-    let res1 = variaveis()
-  res.send(res1)
+    let res6 = repeticao()
+  res.send(res6)
 })
 
 app.get('/ex7', (req, res) => {
 
-    let res1 = variaveis()
-  res.send(res1)
+    let res7 = switc()
+  res.send(res7)
 })
 
 app.get('/ex8', (req, res) => {
 
-    let res1 = variaveis()
-  res.send(res1)
+    let res8 = vetor()
+  res.send(res8)
 })
 
 app.listen(3000, () => {
