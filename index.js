@@ -1,4 +1,3 @@
-
 import { variaveis } from "./variaveis.js";
 import { aritmeticos } from "./aritmeticos.js";
 import { relacionais } from "./relacionais.js";
@@ -8,51 +7,64 @@ import { switc } from "./switch.js";
 import { repeticao } from "./repeticao.js";
 import { vetor } from "./vetor.js";
 
-import readline from 'node:readline';
+import express from 'express'
 
-const rl = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout
-});
+const app = express()
 
-function sistema(topico) {
-    switch (topico) {
-        
-        case 1:
-            variaveis();
-            break;
-        case 2:
-            aritmeticos();
-            break;
-        case 3:
-            relacionais();
-            break;
-        case 4:
-            logicos();
-            break;
-        case 5:
-            ifElse();
-            break;
-        case 6:
-            switc();
-            break;
-        case 7:
-            repeticao();
-            break;
-        case 8:
-            vetor();
-            break;
-        default:
-            console.log("Tópico inválido! Escolha de 1 a 8.");
-    }
-}
+app.get('/ex1', (req, res) => {
 
-rl.question("Escolha um tópico (1 a 8): ", function(resposta) {
+    let res1 = variaveis()
+  res.send(res1)
+})
 
-    let numero = parseInt(resposta);
+app.get('/ex2', (req, res) => {
 
-    sistema(numero);
+    let res1 = aritmeticos()
+  res.send(res1)
+})
 
-    rl.close();
-});
+app.get('/ex3', (req, res) => {
+
+    let res1 = ifElse()
+  res.send(res1)
+})
+
+app.get('/ex4', (req, res) => {
+
+    let res1 = variaveis()
+  res.send(res1)
+})
+
+app.get('/ex5', (req, res) => {
+
+    let res1 = variaveis()
+  res.send(res1)
+})
+
+app.get('/ex6', (req, res) => {
+
+    let res1 = variaveis()
+  res.send(res1)
+})
+
+app.get('/ex7', (req, res) => {
+
+    let res1 = variaveis()
+  res.send(res1)
+})
+
+app.get('/ex8', (req, res) => {
+
+    let res1 = variaveis()
+  res.send(res1)
+})
+
+app.listen(3000, () => {
+  console.log('Server is running on http://localhost:3000')
+} )
+
+
+
+
+
 

@@ -1,8 +1,8 @@
 export function ifElse(){
     let nota=7
     if (nota>=6){
-        console.log("aprovado")
+        return("aprovado")
     } else {
-        console.log("reprovado")
+        return("reprovado")
     }
 }
