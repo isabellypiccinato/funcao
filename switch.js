@@ -18,5 +18,7 @@ export function switc () {
         console.log ("dia invalido")
         break;
     }
+
+    return (dia)
 }
 
