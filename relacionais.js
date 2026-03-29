@@ -6,5 +6,5 @@ export function relacionais(){
     let v2 = ("X é menor que Y?", x<y)
     let v3 = ("X é igual a Y?", x==y)
 
-    return [v1, v2, v3, v4]
+    return [v1, v2, v3]
 }

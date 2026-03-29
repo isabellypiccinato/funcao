@@ -2,10 +2,9 @@ export function logicos() {
     let idade = 18
     let temCarteira = true
 
-    po1 = ("pode dirigir", idade >= 18 && temCarteira)
-    po2 = ("pode entrar na festa", idade>= 18 || temCarteira)
-    po3 = ("não tem carteira?", !temCarteira)
+    const po1 = "Pode dirigir: " + (idade >= 18 && temCarteira)
+    const po2 = "Pode entrar na festa: " + (idade >= 18 || temCarteira)
+    const po3 = "Não tem carteira? " + (!temCarteira)
 
-    return [po1, po2, po3, po4]
+    return [po1, po2, po3]
 }
-
