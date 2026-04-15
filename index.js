@@ -11,6 +11,10 @@ import express from 'express';
 
 const app = express()
 
+<<<<<<< HEAD
+// EX1 (sem entrada)
+=======
+>>>>>>> parent of e3c6cfe (teste)
 app.get('/ex1', (req, res) => {
 
     let res1 = variaveis()
@@ -60,6 +64,11 @@ app.get('/ex8', (req, res) => {
 })
 
 app.listen(3000, () => {
+<<<<<<< HEAD
+    console.log('Servidor rodando na porta 3000 🚀')
+})
+=======
   console.log('Server is running on http://localhost:3000')
 } )
 
+>>>>>>> parent of e3c6cfe (teste)
