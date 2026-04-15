@@ -1,13 +1,24 @@
-export function switc(op) {
+export function switc () {
 
-    switch (op) {
-        case 1:
-            return "Opção 1"
-        case 2:
-            return "Opção 2"
-        case 3:
-            return "Opção 3"
-        default:
-            return "Opção inválida"
+    let dia =3;
+
+    switch(dia){
+    case 1:
+        console.log ("domingo")
+        break;
+    case 2:
+        console.log ("segunda")
+        break;
+    case 3:
+        console.log ("terça")
+        break;
+
+
+    default:
+        console.log ("dia invalido")
+        break;
     }
+
+    return (dia)
 }
+
