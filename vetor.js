@@ -1,9 +1,8 @@
-export function vetor() {
-    let frutas = ["Maçã", "Banana", "Uva", "Manga"];
+export function vetor(valor) {
 
-    for (let i = 0; i < frutas.length; i++) {
-        return(frutas[i]);
-    }
+    let lista = [1, 2, 3, 4, 5]
 
+    lista.push(valor)
 
+    return lista
 }
